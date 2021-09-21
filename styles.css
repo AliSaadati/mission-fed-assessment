@@ -1,0 +1,177 @@
+body, html {
+    margin:0;
+    padding:0;
+    font-family: montserrat;
+    background-color: #f9f9f9;
+}
+
+/*** Header ***/
+header {
+    height: 5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-left: 2rem;
+    font-family: montserrat;
+    background-color: #f3d021;
+    font-weight: 700;
+}
+
+.header-text {
+    line-height: 5rem;
+    color: #000000;
+    font-size: 1.4rem;
+}
+
+.input-flex-container {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem .5rem;
+    padding: 2rem .5rem;
+    justify-content: center;
+    background-color: white;
+}
+
+@media screen and (min-width: 480px) {
+    .input-flex-container {
+        margin: 2rem;
+        padding: 3rem 2rem;
+    }
+  }
+
+.button-flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.switch-flex-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+/*** Button ***/
+button {
+    min-width: 15rem;
+    box-shadow: 0 4px 4px #00000039;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    padding: .75rem 3rem;
+    font-weight: 700;
+    font-family: montserrat;
+    /* margin: 0 1.5rem; */
+    cursor: pointer;
+    background-color: #0066fd;
+    margin: 1rem;
+}
+
+button:hover {
+    background-color: #0053d0;
+}
+
+
+/*** Image ***/
+img {
+    color: #999;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 2rem auto;
+    /* background-color: black; */
+    /* border: 2rem solid #f2f8ff; */
+    max-width: calc(100% - 4rem);
+    border: 1.5rem solid #f3d021;
+    border-radius: 20px;
+    display: none;
+}
+
+.show {
+    display:block;
+}
+
+/*** Slider ***/
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    margin-top: 1rem;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .2s;
+    transition: .2s;
+    display: block;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .2s;
+    transition: .2s;
+  }
+  
+  input:checked + .slider {
+    background-color: #f3d021;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #f3d021;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  .switch-label-text {
+      margin: 1rem 1rem 0 1rem;
+  }
+
+  footer {
+    text-align: center;
+    font-family: montserrat;
+    background-color: #f3d021;
+    padding: 1.25rem;
+  }
+
+  .footer-text {
+    color: #000000;
+    font-size: .8rem;
+  }
